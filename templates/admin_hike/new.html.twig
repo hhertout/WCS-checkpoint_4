@@ -1,0 +1,16 @@
+{% extends 'base.html.twig' %}
+
+{% block title %}
+	{{ parent() ~ " | Admin - Guides" }}
+{% endblock %}
+
+{% block body %}
+	<section class="form-container my-5 m-auto">
+		<h1>Créer un nouveau guide</h1>
+
+		<div class="form-container p-4">
+			{{ include('admin_hike/_form.html.twig') }}
+
+		</div>
+	</section>
+{% endblock %}

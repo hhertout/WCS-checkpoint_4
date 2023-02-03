@@ -35,6 +35,7 @@ Encore
      * and one CSS file (e.g. app.css) if your JavaScript imports CSS.
      */
     .addEntry('app', './assets/app.js')
+    .addEntry('leaflet', './assets/leaflet.js')
 /*     .addStyleEntry('foo','./assets/styles/foo.scss') */
 
     // enables the Symfony UX Stimulus bridge (used in assets/bootstrap.js)

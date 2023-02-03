@@ -1,0 +1,42 @@
+# Read the documentation: https://symfony.com/doc/current/bundles/FOSCKEditorBundle/index.html
+
+fos_ck_editor:
+    styles:
+        hike_route: 
+            - { name: "Titre", element: "h4", styles: { font-family: "Poppins", font-size: "20px" } }
+            - { name: "Sous-titre", element: "h5", styles: { font-family: "Poppins", font-size: "18px" } }
+            - { name: "Contenu", element: "p", styles: { font-family: "Poppins", font-size: "16px" } }
+    configs:
+        cke_hike_route_config:
+            toolbar: 
+                [
+                    ["Styles"],
+                    ["Bold", "Italic", "Underline", "Strike", "-", "RemoveFormat"],
+                    ["Link", "Unlink", "Anchor"],
+                    [
+                        "NumberedList",
+                        "BulletedList",
+                        "Blockquote",
+                        "-",
+                        "Outdent",
+                        "Indent",
+                    ],
+                    [
+                        "Cut",
+                        "Copy",
+                        "Paste",
+                        "PasteText",
+                        "PasteFromWord",
+                        "-",
+                        "Undo",
+                        "Redo",
+                    ],
+                    ["Maximize"],
+                ]
+            uiColor: "#FFFFFF"
+            height: "400px"
+            stylesSet: "hike_route"
+
+twig:
+    form_themes:
+        - '@FOSCKEditor/Form/ckeditor_widget.html.twig'

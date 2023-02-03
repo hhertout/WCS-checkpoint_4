@@ -1,0 +1,47 @@
+@import url('https://fonts.googleapis.com/css2?family=Arima:wght@300;400;500;600;700&family=Imprima&family=Poppins:ital,wght@0,200;0,300;0,400;0,500;0,600;0,700;0,800;0,900;1,300;1,400;1,500;1,600;1,700;1,800;1,900&display=swap');
+
+$font-title: "Arima", cursive;
+$font-subtitle: 'Imprima', cursive;
+$font-body: "Poppins", sans-serif;
+
+$primary: #006e24;
+$secondary: #006689;
+$tertiary: #006a66;
+$primary-dark: #093824;
+$primary-container: #b2f7b4;
+$secondary-container: #c3e8ff;
+$nav-background: rgba(255, 255, 255, 0.3);
+
+$light: #F1F1F1;
+$dark: #333;
+$danger: #ba1a1a;
+$success: #76f86f;
+
+$background-light: #fcfffa;
+$background-dark: #1a1c19;
+
+$grey-dark: #847376;
+
+$theme-colors: (
+    "primary" : $primary,
+    "secondary" : $secondary,
+    "tertiary" : $tertiary,
+    "light" : $light,
+    "dark" : $dark,
+    "danger" : $danger,
+    "success":  $success,
+    "background-light" : $background-light,
+    "background-dark" : $background-dark,
+    "primary-container" : $primary-container,
+    "secondary-container" : $secondary-container,
+    "nav-background" : $nav-background,
+);
+
+$border-radius: 8px;
+$border-radius-input: 6px;
+$btn-border-radius: $border-radius;
+$btn-padding-y: 0.7rem;
+$btn-padding-x: 2rem;
+$box-shadow:rgba(100, 100, 111, 0.2) 0px 7px 29px 0px;
+$box-shadow-card: rgba(0, 0, 0, 0.15) 0px 3px 3px 0px;
+$box-shadow-btn: rgba(0, 0, 0, 0.12) 0px 1px 3px, rgba(0, 0, 0, 0.24) 0px 1px 2px;

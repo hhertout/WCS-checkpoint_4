@@ -1,0 +1,9 @@
+{% extends 'base.html.twig' %}
+{% block title %}{{ parent() ~ " | Admin - Guides" }}
+{% endblock %}
+{% block body %}
+    <div class="form-container my-5">
+    <h1>Modifier</h1>
+    {{ include('admin_hike/_form.html.twig', {'button_label': 'Update'}) }}
+    </div>
+{% endblock %}

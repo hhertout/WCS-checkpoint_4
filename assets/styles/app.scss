@@ -1,2 +1,163 @@
 @import "_theme";
 @import "~bootstrap/scss/bootstrap";
+
+footer {
+  .container {
+    padding-block: 2vw;
+  }
+  ul {
+    list-style-type: none;
+  }
+}
+
+body {
+    min-height: 100vh;
+    font-family: $font-body;
+}
+
+h1,
+h2,
+h3 {
+  font-family: $font-title;
+}
+h3,
+h4,
+h5 {
+  font-family: $font-subtitle;
+}
+
+.title {
+  font-family: $font-title;
+}
+.subtitle {
+  font-family: $font-subtitle;
+}
+
+.min-vh{
+    min-height: 80vh;
+}
+
+.rounded {
+  border-radius: $border-radius;
+}
+.rounded-top {
+    border-radius: $border-radius $border-radius 0 0;
+}
+.rounded-bot {
+    border-radius: 0 0 $border-radius $border-radius;
+}
+.rounded-left {
+    border-radius: $border-radius 0 0 $border-radius;
+}
+.rounded-xl {
+    border-radius: 50%;
+}
+.rounded-sm {
+    border-radius: 3px;
+}
+.rounded-sm-top {
+    border-radius: 3px 3px 0 0; 
+}
+
+.badge {
+  font-size: 0.8rem;
+}
+
+label {
+  font-family: $font-subtitle;
+}
+
+.form-control,
+.form-select {
+  border-radius: $border-radius-input;
+}
+
+.form-container {
+  max-width: 650px;
+  margin: auto;
+}
+.outline-custom {
+  border: 2px solid $grey-dark;
+}
+.backdrop-blur {
+    backdrop-filter: blur(10px);
+}
+
+.box-shadow {
+  box-shadow: $box-shadow;
+}
+.box-shadow-bot {
+    box-shadow: rgba(27, 31, 35, 0.04) 0px 1px 0px, rgba(255, 255, 255, 0.25) 0px 1px 0px inset;
+}
+.card-shadow {
+  box-shadow: $box-shadow-card;
+}
+.btn-shadow {
+  &:hover {
+    box-shadow: $box-shadow-btn;
+  }
+}
+
+.thumbnail {
+    width: 100%;
+    height: 100%;
+    object-fit: cover;
+}
+.card-hike {
+    &:hover {
+        transform: scale(1.01);
+        transition: .3s;
+    }
+}
+.paragraph-container {
+    max-width: 75ch;
+}
+
+#banner {
+    width: 100vw;
+    height: 30vw;
+    margin: 0;
+    padding: 0;
+
+    overflow: hidden;
+
+    img{
+        width: 100%;
+        height: 100%;
+        aspect-ratio: 16/9;
+        object-fit: cover;
+        object-position: center;
+    }
+}
+tr{
+    &:hover {
+        background-color: aliceblue;
+    }
+}
+
+#map {
+    width: 100%;
+    height: 40vh;
+}
+
+.home-banner{
+    margin-top: -5rem;
+    width: 100vw;
+    height: 100vh;
+
+    img{
+        height: 100%;
+        width: 100%;
+        object-fit: cover;
+    }
+}
+.img-card {
+    height: 65%;
+}
+.title-card {
+    height: 35%;
+}
+
+.home-img {
+    width: 300px;
+}

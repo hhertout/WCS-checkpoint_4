@@ -1,0 +1,12 @@
+<form action="{{ path('app_login') }}" method="post">
+
+	<div class="form-group">
+		<label for="username">Email:</label>
+		<input class="form-control my-2" type="text" id="username" name="_username" value="{{ last_username }}">
+
+		<label for="password">Mot de passe:</label>
+		<input class="form-control my-2" type="password" id="password" name="_password">
+		<input type="hidden" name="_csrf_token" value="{{ csrf_token('authenticate') }}">
+	</div>
+	<button class="btn btn-primary my-2" type="submit">Connexion</button>
+</form>

@@ -1,0 +1,25 @@
+{% extends 'base.html.twig' %}
+
+{% block title %}
+	{{ parent() ~ " | Hiver"}}
+{% endblock %}
+
+{% block body %}
+	<section class="container my-5">
+		<h1>Section Hiver</h1>
+
+		<div>
+			{% include "./components/hike/searchbar.html.twig" with {theme: "winter"} %}
+		</div>
+
+
+		<div class="row">
+			{% for hike in hikes %}
+
+				{% include "./components/hike/hike_card.html.twig" with {theme: "winter"} %}
+
+			{% endfor %}
+		</div>
+
+	</section>
+{% endblock %}

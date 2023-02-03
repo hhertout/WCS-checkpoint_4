@@ -1,0 +1,20 @@
+{% extends 'base.html.twig' %}
+
+{% block title %}
+	{{ parent() ~ " | Hiver"}}
+{% endblock %}
+
+
+{% block body %}
+
+	{% include "./components/hike/hike_banner.html.twig" %}
+
+	<section class="container">
+		{% include "./components/hike/hike_description.html.twig" with { theme: hike.season } %}
+	</section>
+
+	<section class="container">
+		{% include "./components/hike/hike_commit.html.twig" with { theme: hike.season }%}
+	</section>
+
+{% endblock %}

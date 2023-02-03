@@ -1,0 +1,15 @@
+{% extends 'base.html.twig' %}
+
+{% block title %}
+	{{ parent() ~ " | Admin - Points d'intérêt" }}
+{% endblock %}
+
+{% block body %}
+
+	<section class="form-container my-5 m-auto">
+		<h1>Créer un nouveau point d'intérêt</h1>
+
+		{{ include('admin_poi/_form.html.twig') }}
+
+	</section>
+{% endblock %}

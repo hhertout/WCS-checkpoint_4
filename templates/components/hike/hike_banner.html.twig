@@ -1,0 +1,8 @@
+<div id="banner">
+	{% if hike.season == "summer" %}
+		<img src="{{ hike.image is not null ? vich_uploader_asset(hike) : asset('build/images/placeholder/placeholder-summer.jpg')}}" alt="Miniature">
+	{% else %}
+		<img src="{{ asset('build/images/placeholder/placeholder-winter.jpg')}}" alt="Miniature">
+	{% endif %}
+	<h4 class="text-center fw-bold fs-4 my-2">{{ hike.title }}</h4>
+</div>

@@ -1,0 +1,14 @@
+{% extends 'base.html.twig' %}
+
+{% block title %}Edit Location
+{% endblock %}
+
+{% block body %}
+	<section class="container my-5">
+		<h1>Modifier une géoposition</h1>
+
+		{{ include('admin_location/_form.html.twig', {'button_label': 'Mettre à jour'}) }}
+
+	</section>
+
+{% endblock %}

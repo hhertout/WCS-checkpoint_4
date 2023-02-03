@@ -1,0 +1,44 @@
+<div class="col-xl-4 col-md-6 my-3">
+<div class="p-4 h-100">
+	<a href="{{ theme == "summer" ? path("app_hike_summer_show", {"slug": hike.slug}) : path("app_hike_winter_show", {"slug": hike.slug}) }}" class="h-100 text-decoration-none text-dark">
+		<div class="d-flex flex-column card-hike card-shadow h-100 rounded-sm position-relative">
+            <div class="position-absolute top-0 start-0 rounded m-2">
+                <div class="d-flex align-items-center gap-2 p-2 subtitle backdrop-blur text-light">
+						<span class="fw-bold">D: </span><span>{{ hike.difficulty }}/ 5</span>
+					</div>
+                </div>
+
+            <div class="position-absolute top-0 end-0 rounded m-2">
+                <div class="p-2 subtitle backdrop-blur text-light">⭐️ {{ hike.averageRate }}</div>
+            </div>
+            
+            <div class="w-100 img-card">
+				{% if hike.season == "summer" %}
+					<img class="thumbnail rounded-sm-top w-100 h-100" src="{{ hike.image is not null ? vich_uploader_asset(hike) : asset('build/images/placeholder/placeholder-summer.jpg')}}" alt="Miniature">
+				{% else %}
+					<img class="thumbnail rounded-sm-top w-100 h-100" src="{{ hike.image is not null ? vich_uploader_asset(hike) : asset('build/images/placeholder/placeholder-winter.jpg')}}" alt="Miniature">
+				{% endif %}
+			</div>
+
+			<div class="d-flex flex-column text-card">
+
+				<div class="d-flex gap-3 justify-content-center align-items-center fw-bold rounded-bot box-shadow py-1 {{ theme == "summer" ? " bg-primary-container" : "bg-secondary-container"}}">
+					<div class="d-flex align-items-center gap-2">
+						<span><img src="{{ asset('build/images/placeholder/hiking.png')}}" alt="Miniature" width="16px"></span>
+						<span>{{ hike.type }}</span>
+					</div>
+
+
+					<div class="d-flex align-items-center gap-2">
+						<img src="{{ asset('build/images/placeholder/map.png')}}" alt="Miniature" width="16px">
+						<span>{{ hike.location.valley }}</span>
+					</div>
+				</div>
+
+				<div class="fw-bold px-4 my-2">{{ hike.title }}</div>
+
+			</div>
+		</div>
+	</a>
+    </div>
+</div>

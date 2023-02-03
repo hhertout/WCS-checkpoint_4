@@ -4,23 +4,46 @@
 {% endblock %}
 
 {% block body %}
-	<div class="example-wrapper text-center">
-		<h1>Hello
-			{{ controller_name }}! ✅</h1>
 
-		This friendly message is coming from:
-		<ul>
-			<li>Your controller at
-				<code>
-					<a href="{{ '/home/vgillet/Symfony-initialized/base_project_bootstrap/src/Controller/HomeController.php'|file_link(0) }}">src/Controller/HomeController.php</a>
-				</code>
-			</li>
-			<li>Your template at
-				<code>
-					<a href="{{ '/home/vgillet/Symfony-initialized/base_project_bootstrap/templates/home/index.html.twig'|file_link(0) }}">templates/home/index.html.twig</a>
-				</code>
-			</li>
-		</ul>
-		<a href="{{ path("app_logout") }}">Disconnect</a>
+	<div class="home-banner">
+		{% include './components/home/banner.html.twig' %}
 	</div>
+	<section class="container my-5">
+		<div class="example-wrapper text-center">
+			<h1 class="body">Visitez la plus belle des région !</h1>
+		</div>
+
+		<div class="row mt-4">
+			<div class="col-lg-8">
+				<p class="p-3">
+					Lorem ipsum dolor sit amet consectetur, adipisicing elit. Ducimus quasi, cum fugit distinctio animi natus repellendus rerum sed, reprehenderit maxime beatae iure mollitia laboriosam praesentium quas blanditiis dolorum tempore quae.
+					Voluptate magni ratione minus similique doloribus. Debitis, ut. Rem quas omnis facilis, animi expedita ex in perspiciatis quae praesentium quaerat repudiandae eligendi quam error nobis! Pariatur quos nihil aperiam dolore!
+					Temporibus sed omnis, harum iure eum ullam blanditiis velit iste impedit. Asperiores iste consequuntur nesciunt aspernatur! Consequuntur id eos cupiditate necessitatibus. Distinctio aperiam rerum enim consequatur accusamus totam tempora voluptatibus.
+					Reiciendis consequuntur rerum vero fugit distinctio consectetur. Temporibus aut accusantium incidunt fugit, quod accusamus aspernatur libero et earum at magni ratione, nemo iste quae! Magni voluptatem eveniet culpa qui soluta!
+				</p>
+			</div>
+			<div class="col-lg-4">
+				<p class="p-3">
+					Lorem ipsum dolor sit amet consectetur adipisicing elit. Repellat earum totam quos atque, sequi tenetur reprehenderit tempora culpa vel facilis voluptatum! Impedit eaque deleniti assumenda dicta tempore? Suscipit, asperiores fugiat!
+					Earum possimus nihil perspiciatis tenetur molestias incidunt ab accusamus! Ipsam possimus perspiciatis quis ad omnis quam, rerum quos, delectus facere dignissimos quae maiores, veritatis eius laborum dolore pariatur. Obcaecati, qui.
+				</p>
+			</div>
+
+		</div>
+
+        <div class="row my-4">
+			<div class="col-lg-8">
+				<div class="d-flex justify-content-center align-items-center">
+                    <img class="home-img" src="{{ asset('build/images/home/img1.jpg') }}" alt="">
+                </div>
+			</div>
+			<div class="col-lg-4">
+				<p class="p-3">
+					Lorem ipsum dolor sit amet consectetur adipisicing elit. Repellat earum totam quos atque, sequi tenetur reprehenderit tempora culpa vel facilis voluptatum! Impedit eaque deleniti assumenda dicta tempore? Suscipit, asperiores fugiat!
+					Earum possimus nihil perspiciatis tenetur molestias incidunt ab accusamus! Ipsam possimus perspiciatis quis ad omnis quam, rerum quos, delectus facere dignissimos quae maiores, veritatis eius laborum dolore pariatur. Obcaecati, qui.
+				</p>
+			</div>
+
+		</div>
+	</section>
 {% endblock %}

@@ -1,0 +1,29 @@
+{% extends 'base.html.twig' %}
+
+{% block title %}
+	{{ parent() ~ " | Été"}}
+{% endblock %}
+
+{% block body %}
+	<section class="container my-5">
+		<h1>Section Été</h1>
+
+        <div>
+            {% include "./components/hike/searchbar.html.twig" with {theme: "summer"} %}
+        </div>
+
+        {% if hikes is not empty %}
+		<div class="row">
+			{% for hike in hikes %}
+
+				{% include "./components/hike/hike_card.html.twig" with {theme: "summer"} %}
+
+			{% endfor %}
+		</div>
+        {% else %}
+        <div>
+            <h2>Aucun résultat trouvé</h2>
+        </div>
+        {% endif %}
+	</section>
+{% endblock %}

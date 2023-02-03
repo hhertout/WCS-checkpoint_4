@@ -1,0 +1,32 @@
+<div {{attributes}} >
+	{{ form_start(form) }}
+	{{ form_row(form.title)}}
+
+	{{ form_row(form.location) }}
+	{{ form_row(form.imageFile)}}
+	{{ form_row(form.type)}}
+	{{ form_row(form.season)}}
+	{{ form_row(form.short)}}
+	{{ form_row(form.description)}}
+	{{ form_row(form.route)}}
+	{{ form_row(form.distance)}}
+	{{ form_row(form.elevation)}}
+	{{ form_row(form.difficulty)}}
+    {{ form_row(form.pointOfInterests)}}
+
+
+	{# {% for key, poiForm in form.pointOfInterests %}
+		{{ form_widget(poiForm) }}
+
+	{% endfor %}
+
+
+	{{ form_widget(form.pointOfInterests.vars.button_add, { label: '+ Add Item', attr: { class: 'btn btn-outline-primary' } }) }} #}
+
+
+	<div class="d-flex justify-content-between my-3">
+		<a class="btn btn-tertiary" href="{{ path('app_admin_hike_index') }}">Retour</a>
+		<button class="btn btn-primary">{{ button_label|default('Sauvegarder') }}</button>
+	</div>
+	{{ form_end(form) }}
+</div>

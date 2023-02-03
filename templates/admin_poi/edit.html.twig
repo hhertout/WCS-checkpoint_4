@@ -1,0 +1,16 @@
+{% extends 'base.html.twig' %}
+
+{% block title %}
+	{{ parent() ~ " | Admin - Points d'intérêt" }}
+{% endblock %}
+
+{% block body %}
+	<section class="container mt-5">
+		<h1>Modifier</h1>
+
+		{{ include('admin_poi/_form.html.twig', {'button_label': 'Update'}) }}
+        
+	</section>
+
+
+{% endblock %}

@@ -2,10 +2,12 @@
 
 {% block body %}
 	<main>
-		<h1>Register</h1>
-		{{ form_start(registrationForm) }}
-		<button type="submit">Register</button>
-		{{ form_end(registrationForm) }}
-		<a href="{{ path('app_login') }}" class="">Back</a>
-	</div>
-</main>{% endblock %}
+		<section class="form-container p-3 my-5">
+			<h1>Inscription</h1>
+			{{ form_start(registrationForm) }}
+            {{ form_widget(registrationForm)}}
+			<button class="btn btn-primary" type="submit">S'inscrire</button>
+			{{ form_end(registrationForm) }}
+		</section>
+	</main>
+{% endblock %}

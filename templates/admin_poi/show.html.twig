@@ -1,0 +1,30 @@
+{% extends 'base.html.twig' %}
+
+{% block title %}{{ parent() ~ " | Admin - Points d'intérêt" }}
+{% endblock %}
+
+{% block body %}
+	<div class="container my-5">
+		<h1>Point d'intérêt n° {{ point_of_interest.id }}</h1>
+
+		<table class="table my-5">
+			<tbody>
+				<tr>
+					<th>Title</th>
+					<td>{{ point_of_interest.title }}</td>
+				</tr>
+				<tr>
+					<th>Description</th>
+					<td>{{ point_of_interest.description }}</td>
+				</tr>
+
+			</tbody>
+		</table>
+
+		<div class="d-flex justify-content-between">
+			<a class="btn btn-tertiary" href="{{ path('app_admin_poi_index') }}">Retour</a>
+
+			<a class="btn btn-primary" href="{{ path('app_admin_poi_edit', {'id': point_of_interest.id}) }}">Modifier</a>
+		</div>
+	</div>
+{% endblock %}

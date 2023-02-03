@@ -1,0 +1,30 @@
+{% extends 'base.html.twig' %}
+
+{% block title %}Hello Admin!
+{% endblock %}
+
+{% block body %}
+
+	<div class="container mt-5">
+		{% include "./components/admin/adminMenu.html.twig" %}
+	</div>
+
+
+	<div class="container mb-5 box-shadow rounded p-5">
+		<h1>Page admin</h1>
+
+		<section class="my-5 bg-secondary-container rounded-sm p-3 py-5">
+			<h2>Gestion de la partie Admin</h2>
+
+			<article>
+				<p>
+					<ul>
+						<li>1 - Créez vos points d'intérêts si il n'existe pas</li>
+						<li>2 - Renseignez la geoposition utilisé dans le guide si elle n'est pas déjà crée</li>
+						<li>3 - Créez votre guide</li>
+					</ul>
+				</p>
+			</article>
+		</section>
+	</div>
+{% endblock %}
