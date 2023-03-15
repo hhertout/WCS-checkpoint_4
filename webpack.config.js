@@ -31,10 +31,10 @@ Encore
     /*
      * ENTRY CONFIG
      *
-     * Each entry will result in one JavaScript file (e.g. app.js)
+     * Each entry will result in one JavaScript file (e.g. app.ts)
      * and one CSS file (e.g. app.css) if your JavaScript imports CSS.
      */
-    .addEntry('app', './assets/app.js')
+    .addEntry('app', './assets/app.ts')
     .addEntry('leaflet', './assets/leaflet.js')
 /*     .addStyleEntry('foo','./assets/styles/foo.scss') */
 
@@ -76,7 +76,7 @@ Encore
     .enableSassLoader()
 
     // uncomment if you use TypeScript
-    //.enableTypeScriptLoader()
+    .enableTypeScriptLoader()
 
     // uncomment if you use React
     //.enableReactPreset()

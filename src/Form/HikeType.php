@@ -52,10 +52,10 @@ class HikeType extends AbstractType
                 'multiple' => false,
                 'expanded' => true,
             ])
-            ->add('route', CKEditorType::class, [
+            ->add('route', TextareaType::class, [
                 "label" => "Parcours",
             ])
-            ->add('description', CKEditorType::class, [
+            ->add('description', TextareaType::class, [
                 "label" => "Description",
             ])
             ->add('elevation', IntegerType::class, [

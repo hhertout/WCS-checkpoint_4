@@ -10,8 +10,8 @@ if (mapDisplay) {
     console.log(latitude, longitude)
 
     // replace "toner" here with "terrain" or "watercolor"
-    var layer = new L.StamenTileLayer("terrain");
-    var map = new L.Map("map", {
+    const layer = new L.StamenTileLayer("terrain");
+    const map = new L.Map("map", {
         center: new L.LatLng(latitude, longitude),
         zoom: 14
     });

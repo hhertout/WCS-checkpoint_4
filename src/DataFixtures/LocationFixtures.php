@@ -60,7 +60,7 @@ class LocationFixtures extends Fixture
             "long" => 0.144082,
         ],
         [
-            "city" => "Pont d'Espace",
+            "city" => "Pont d'Espagne",
             "valley" => "Vallée de Cauterêt",
             "lat" => 42.852102,
             "long" => -0.135744,
