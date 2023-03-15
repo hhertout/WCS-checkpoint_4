@@ -25,4 +25,6 @@
 npm-debug.log
 yarn-error.log
 lorem.md
+.DS_Store
+.idea
 ###< symfony/webpack-encore-bundle ###
